@@ -1,10 +1,8 @@
 # Scalable Multi-Teacher Gated Knowledge Distillation for Accurate & Efficient Leukemia Classification
 
-Recent advancements in deep learning have driven significant progress in medical imaging, notably in automated leukemia classification. However, deploying state-of-the-art models in real-world applications can be prohibitive due to their computational and memory overhead. In this context, this study introduces a multi-teacher knowledge distillation framework, complemented by a learned gating mechanism. This gate is designed to dynamically allocate weights to the teacher models during the distillation process, promoting accurate predictions in the student model. Swin Transformer and ConvNext models serve as the chosen teachers, with the intention to harness both the robust representational capabilities of transformers and the locality-preserving attributes of convolutions. Employing this strategy to guide a lightweight MobileNetV2 student model,  an evident improvement in performance was achieved over conventional training techniques.
+Recent advancements in deep learning have driven significant progress in medical imaging, notably in automated leukemia classification. However, deploying state-of-the-art models in real-world applications can be prohibitive due to their computational and memory overhead. In this context, this study introduces a multi-teacher knowledge distillation framework, complemented by a learned gating mechanism. This gate is designed to dynamically allocate weights to the teacher models during the distillation process, promoting accurate predictions in the student model. Swin Transformer and ConvNext models serve as the chosen teachers, with the intention to harness both the robust representational capabilities of transformers and the locality-preserving attributes of convolutions. Employing this strategy to guide a lightweight MobileNetV2 student model, an evident improvement in performance was achieved over conventional training techniques.
 
 > Note: Extended abstract submitted to NewInML NeurIPS 2023 Workshop
-
-
 
 ## Knowledge Distillation Flow
 
@@ -16,16 +14,21 @@ Recent advancements in deep learning have driven significant progress in medical
   
 </p>
 
-
 ## Code
 
 ### Teachers
-*TBA*
-### KD 
-[Distillation Notebook](./notebooks/knowledge-distillation.ipynb)
-### Students
-*TBA*
 
+- [Swin Transformer Base](./notebooks/teachers-swin.ipynb)
+- [ConvNext Base](./notebooks/teacher-convnext.ipynb)
 
-## Results Comparison 
-*TBA*
+### KD
+
+- [Distillation Notebook](./notebooks/knowledge-distillation.ipynb)
+
+### Student Standalone
+
+- [MobileNetV2](./notebooks/student-standalone.ipynb)
+
+## Results Comparison
+
+_TBA_
